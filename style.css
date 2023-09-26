@@ -48,3 +48,44 @@ img {
 }
 
 /** Para activar el modo flexbox, hemos utilizado sobre el elemento contenedor la propiedad display y especificar el valor flex: */
+
+.flex-direction {
+    display: flex;
+    /* comportamiento uno debajo del otro */
+    flex-direction: column;
+    /* comportamiento en fila en reverso */
+    flex-direction: row-reverse;
+    /* comportamiento en columna en reverso */
+    flex-direction: column-reverse;
+    /* comportamiento por defecto */
+    flex-direction: row;
+    gap: 40px;
+}
+
+.flex-wrap {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.justify-content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.align-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: center;
+
+}
